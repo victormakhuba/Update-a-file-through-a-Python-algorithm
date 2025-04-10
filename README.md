@@ -8,7 +8,7 @@ At my organization, access to restricted content is controlled with an allow lis
 
 For the first part of the algorithm, I opened the "allow_list.txt" file. First, I assigned this file name as a string to the import_file variable:
 
-#Assign 'import_file' to the name of the file
+#90EE90#Assign 'import_file' to the name of the file
 
 import_file = "allow_list.txt"
 
