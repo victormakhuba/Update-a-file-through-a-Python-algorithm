@@ -49,4 +49,19 @@ A key part of my algorithm involves iterating through the IP addresses that are 
 #Name loop variable 'element'
 #Loop through 'remove_list'
 for element in remove_list:
+
+The for loop in Python repeats code for a specified sequence. The overall purpose of the for loop in a Python algorithm like this is to apply specific code statements to all elements in a sequence. The for keyword starts the for loop. It is followed by the loop variable element and the keyword in. The keyword in indicates to iterate through the sequence ip_addresses and assign each value to the loop variable element.
   
+**Remove IP addresses that are on the remove list**
+
+My algorithm requires removing any IP address from the allow list, ip_addresses, that is also contained in remove_list.  Because there were not any duplicates in ip_addresses, I was able to use the following code to do this:
+
+for element in remove_list:
+
+#Create conditional statement to evaluate if 'element' is in 'ip_addresses'
+if element in ip_addresses:
+#use the '.remove()' method to remove
+#elements from 'ip_addresses'
+
+ip_addresses.remove(element)
+
