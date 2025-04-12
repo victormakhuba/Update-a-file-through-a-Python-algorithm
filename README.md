@@ -8,8 +8,8 @@ At my organization, access to restricted content is controlled with an allow lis
 
 For the first part of the algorithm, I opened the "allow_list.txt" file. First, I assigned this file name as a string to the import_file variable:
 $${\color{red}
-#Assign 'import_file' to the name of the file
-$$
+#Assign 'import_file' to the name of the file$$
+
 import_file = "allow_list.txt"
 
 **Then, I used a with statement to open the file:**
