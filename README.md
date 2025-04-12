@@ -17,9 +17,7 @@ First, assign the file name to a variable:
 import_file = "allow_list.txt"
 Use a with statement to open and read the file:
 
-python
-Copy
-Edit
+
 # Build 'with' statement to read the initial contents of the file
 with open(import_file, "r") as file:
     # Use '.read()' to store the contents in a variable named 'ip_addresses'
