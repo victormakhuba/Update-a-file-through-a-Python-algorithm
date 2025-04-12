@@ -20,9 +20,11 @@ with open(import_file, "r") as file:
 In my algorithm, the with statement is used with the .open() function in read mode to open the allow list file for the purpose of reading it. The purpose of opening the file is to allow me to access the IP addresses stored in the allow list file. The with keyword will help manage the resources by closing the file after exiting the with statement. In the code with open(import_file, "r") as file:, the open() function has two parameters. The first identifies the file to import, and then the second indicates what I want to do with the file. In this case, "r" indicates that I want to read it. The code also uses the as keyword to assign a variable named file; file stores the output of the .open() function while I work within the with statement.
 
 **Read the file contents**
+
 In order to read the file contents, I used the .read() method to convert it into the string.
 
 **with open(inport_file, "r") as file:**
+
 #Use '.read()' to read the imported and stor it in a variable named       'ip_addresses'
 ip_addresses = file.read()
 
@@ -30,6 +32,7 @@ When using an .open() function that includes the argument "r" for “read,” I 
 
 In summary, this code reads the contents of the "allow_list.txt" file into a string format that allows me to later use the string to organize and extract data in my Python program.
 **Convert the string into a list**
+
 In order to remove individual IP addresses from the allow list, I needed it to be in list format. Therefore, I next used the .split() method to convert the ip_addresses string into a list:
 
 #Use '.split()' to convert 'ip_addresses' from a string to a list
@@ -39,6 +42,7 @@ ip_addresses = ip_addresses.split()
 The .split() function is called by appending it to a string variable. It works by converting the contents of a string to a list. The purpose of splitting ip_addresses into a list is to make it easier to remove IP addresses from the allow list. By default, the .split() function splits the text by whitespace into list elements. In this algorithm, the .split() function takes the data stored in the variable ip_addresses, which is a string of IP addresses that are each separated by a whitespace, and it converts this string into a list of IP addresses. To store this list, I reassigned it back to the variable ip_addresses.
 
 **Iterate through the remove list**
+
 A key part of my algorithm involves iterating through the IP addresses that are elements in the remove_list. To do this, I incorporated a for loop:
 #Build iterative statement
 #Name loop variable 'element'
