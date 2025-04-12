@@ -22,13 +22,13 @@ Use a with statement to open and read the file:
 with open(import_file, "r") as file:
     # Use '.read()' to store the contents in a variable named 'ip_addresses'
     ip_addresses = file.read()
-2. Convert the String to a List
+### 2. Convert the String to a List
 Split the string into a list of IP addresses:
 
 
 # Use '.split()' to convert 'ip_addresses' from a string to a list
 ip_addresses = ip_addresses.split()
-3. Iterate Through the Remove List
+### 3. Iterate Through the Remove List
 Use a for loop to iterate through each item in remove_list:
 
 
@@ -38,7 +38,7 @@ for element in remove_list:
     if element in ip_addresses:
         # Use '.remove()' to remove the element
         ip_addresses.remove(element)
-4. Update the File With the Revised List
+### 4. Update the File With the Revised List
 Convert the list back into a newline-separated string and write it back to the file:
 
 
