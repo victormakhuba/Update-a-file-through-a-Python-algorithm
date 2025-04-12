@@ -32,5 +32,16 @@ In summary, this code reads the contents of the "allow_list.txt" file into a str
 **Convert the string into a list**
 In order to remove individual IP addresses from the allow list, I needed it to be in list format. Therefore, I next used the .split() method to convert the ip_addresses string into a list:
 
+#Use '.split()' to convert 'ip_addresses' from a string to a list
 
+ip_addresses = ip_addresses.split()
+
+The .split() function is called by appending it to a string variable. It works by converting the contents of a string to a list. The purpose of splitting ip_addresses into a list is to make it easier to remove IP addresses from the allow list. By default, the .split() function splits the text by whitespace into list elements. In this algorithm, the .split() function takes the data stored in the variable ip_addresses, which is a string of IP addresses that are each separated by a whitespace, and it converts this string into a list of IP addresses. To store this list, I reassigned it back to the variable ip_addresses.
+
+**Iterate through the remove list**
+A key part of my algorithm involves iterating through the IP addresses that are elements in the remove_list. To do this, I incorporated a for loop:
+#Build iterative statement
+#Name loop variable 'element'
+#Loop through 'remove_list'
+for element in remove_list:
   
