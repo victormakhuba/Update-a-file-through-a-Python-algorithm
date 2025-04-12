@@ -1,67 +1,87 @@
-🛠️ Update a File Through a Python Algorithm
-📄 Project Description
-At my organisation, access to restricted content is controlled using an allow list of IP addresses, stored in a file called allow_list.txt. A separate remove list identifies IP addresses that should no longer have access. I created a Python algorithm to automate the update of the allow list by removing these IP addresses.
+# Update a File Through a Python Algorithm
 
-📂 Step 1: Open the Allow List File
-Assign the file name to a variable:
+## 📌 Project Description
 
+At my organisation, access to restricted content is controlled via an **allow list** of IP addresses (`allow_list.txt`). A separate **remove list** identifies IP addresses that should no longer have access. I created a Python algorithm to **automate the process of updating the allow list** by removing the specified IPs in the remove list.
 
+---
+
+## 📂 Step-by-Step Breakdown
+
+### 1. Open the File That Contains the Allow List
+
+First, assign the file name to a variable:
+
+```python
 # Assign 'import_file' to the name of the file
 import_file = "allow_list.txt"
-Use a with statement to open the file in read mode:
+Use a with statement to open and read the file:
 
-
-# Read the initial contents of the file
+python
+Copy
+Edit
+# Build 'with' statement to read the initial contents of the file
 with open(import_file, "r") as file:
+    # Use '.read()' to store the contents in a variable named 'ip_addresses'
     ip_addresses = file.read()
-The with statement ensures the file is properly closed after reading.
+2. Convert the String to a List
+Split the string into a list of IP addresses:
 
-file.read() converts the file's contents into a single string.
-
-🧱 Step 2: Convert the String to a List
-Convert the string of IP addresses into a list for easier manipulation:
-
-
-# Convert 'ip_addresses' from a string to a list
+python
+Copy
+Edit
+# Use '.split()' to convert 'ip_addresses' from a string to a list
 ip_addresses = ip_addresses.split()
-.split() separates the string into a list using whitespace by default.
+3. Iterate Through the Remove List
+Use a for loop to iterate through each item in remove_list:
 
-🔁 Step 3: Iterate Through the Remove List
-Assuming you already have a list called remove_list, use a for loop to process it:
-
-
+python
+Copy
+Edit
 # Loop through 'remove_list'
 for element in remove_list:
-    # Check if element is in 'ip_addresses' before removing
+    # Check if 'element' is in 'ip_addresses'
     if element in ip_addresses:
+        # Use '.remove()' to remove the element
         ip_addresses.remove(element)
-This ensures you only remove IPs that are actually present in the allow list.
+4. Update the File With the Revised List
+Convert the list back into a newline-separated string and write it back to the file:
 
-💾 Step 4: Update the File with the Revised IP List
-First, convert the list back into a string:
-
-
+python
+Copy
+Edit
 # Convert 'ip_addresses' back to a string for writing
 ip_addresses = "\n".join(ip_addresses)
-Each IP will be written on a new line using \n as a separator.
 
-Now, overwrite the original file:
-
-
-# Rewrite the original file with updated IP addresses
+# Rewrite the file with the updated list
 with open(import_file, "w") as file:
     file.write(ip_addresses)
-"w" mode opens the file for writing and replaces the existing content.
-
 ✅ Summary
-This algorithm:
+This project demonstrates how I:
 
-Opens and reads the IP addresses from allow_list.txt.
+Opened and read from allow_list.txt
 
-Converts the data from string to list format.
+Converted the file contents from a string to a list
 
-Iterates through a predefined remove_list to eliminate unwanted IP addresses.
+Iterated through a separate remove_list and removed matching IPs from the list
 
-Converts the updated list back to a string and writes it to the same file.
+Wrote the updated list back to the file in the correct format
 
-As a result, the allow_list.txt file is cleaned and automatically updated based on the remove_list, ensuring only authorised IP addresses retain access to the restricted content.
+This script helps automate access control in environments using allow lists for restricted content access.
+
+🛠️ Technologies Used
+Python 3
+
+File handling (open, read, write)
+
+List methods (split, remove, join)
+
+Control flow (for, if)
+
+📁 Files Included
+allow_list.txt – File containing allowed IP addresses
+
+remove_list – List (in code or separate file) of IPs to be removed
+
+Python script – Automates the update process
+
