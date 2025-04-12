@@ -11,7 +11,7 @@ For the first part of the algorithm, I opened the "allow_list.txt" file. First, 
 #Assign 'import_file' to the name of the file
 import_file = "allow_list.txt"
 
-Then, I used a with statement to open the file:
+**Then, I used a with statement to open the file:**
 
 #Build 'with' statement to read in the initial contents of the file
 with open(import_file, "r") as file:
@@ -21,7 +21,7 @@ In my algorithm, the with statement is used with the .open() function in read mo
 **Read the file contents**
 In order to read the file contents, I used the .read() method to convert it into the string.
 
-with open(inport_file, "r") as file:
+**with open(inport_file, "r") as file:**
 #Use '.read()' to read the imported and stor it in a variable named       'ip_addresses'
 ip_addresses = file.read()
 
