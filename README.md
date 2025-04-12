@@ -10,7 +10,7 @@ For the first part of the algorithm, I opened the "allow_list.txt" file. First, 
 
 #Assign 'import_file' to the name of the file
 
-$${\color{green}Green}$$import_file = "allow_list.txt"
+$${\color{green}Green}$$ import_file = "allow_list.txt"
 
 
 
