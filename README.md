@@ -12,7 +12,7 @@ At my organisation, access to restricted content is controlled via an **allow li
 
 First, assign the file name to a variable:
 
-```python
+
 # Assign 'import_file' to the name of the file
 import_file = "allow_list.txt"
 Use a with statement to open and read the file:
@@ -22,26 +22,32 @@ Use a with statement to open and read the file:
 with open(import_file, "r") as file:
     # Use '.read()' to store the contents in a variable named 'ip_addresses'
     ip_addresses = file.read()
+    
 ### 2. Convert the String to a List
+
 Split the string into a list of IP addresses:
 
-```python
+
 # Use '.split()' to convert 'ip_addresses' from a string to a list
 ip_addresses = ip_addresses.split()
+
 ### 3. Iterate Through the Remove List
+
 Use a for loop to iterate through each item in remove_list:
 
-```python
+
 # Loop through 'remove_list'
 for element in remove_list:
     # Check if 'element' is in 'ip_addresses'
     if element in ip_addresses:
         # Use '.remove()' to remove the element
         ip_addresses.remove(element)
+        
 ### 4. Update the File With the Revised List
+
 Convert the list back into a newline-separated string and write it back to the file:
 
-```python
+
 # Convert 'ip_addresses' back to a string for writing
 ip_addresses = "\n".join(ip_addresses)
 
