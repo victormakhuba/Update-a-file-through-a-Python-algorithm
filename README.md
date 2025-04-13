@@ -10,7 +10,7 @@ At my organisation, access to restricted content is controlled via an **allow li
 
 ### 1. Open the File That Contains the Allow List
 
-First, assign the file name to a variable:
+#### First, assign the file name to a variable:
 
 
 #Assign 'import_file' to the name of the file
