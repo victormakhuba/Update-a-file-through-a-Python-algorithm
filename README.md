@@ -68,6 +68,7 @@ Wrote the updated list back to the file in the correct format
 This script helps automate access control in environments using allow lists for restricted content access.
 
 🛠️ Technologies Used
+
 Python 3
 
 File handling (open, read, write)
@@ -77,6 +78,7 @@ List methods (split, remove, join)
 Control flow (for, if)
 
 📁 Files Included
+
 allow_list.txt – File containing allowed IP addresses
 
 remove_list – List (in code or separate file) of IPs to be removed
