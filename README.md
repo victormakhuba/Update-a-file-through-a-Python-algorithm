@@ -23,6 +23,7 @@ At my organisation, access to restricted content is controlled via an **allow li
     #Build 'with' statement to read the initial contents of the file
 
     with open(import_file, "r") as file:
+    
 
     # Use '.read()' to store the contents in a variable named 'ip_addresses'
     
