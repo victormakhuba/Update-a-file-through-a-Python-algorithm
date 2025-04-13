@@ -33,6 +33,7 @@ with open(import_file, "r") as file:
 
 
 #Use '.split()' to convert 'ip_addresses' from a string to a list
+
 ip_addresses = ip_addresses.split()
 
 ### 3. Iterate Through the Remove List
