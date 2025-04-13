@@ -14,12 +14,16 @@ First, assign the file name to a variable:
 
 
 #Assign 'import_file' to the name of the file
+
 import_file = "allow_list.txt"
+
+
 Use a with statement to open and read the file:
 
-
 #Build 'with' statement to read the initial contents of the file
+
 with open(import_file, "r") as file:
+
     # Use '.read()' to store the contents in a variable named 'ip_addresses'
     ip_addresses = file.read()
     
@@ -37,10 +41,15 @@ Use a for loop to iterate through each item in remove_list:
 
 
 #Loop through 'remove_list'
+
 for element in remove_list:
+
     # Check if 'element' is in 'ip_addresses'
+    
     if element in ip_addresses:
+    
         # Use '.remove()' to remove the element
+        
         ip_addresses.remove(element)
         
 ### 4. Update the File With the Revised List
@@ -54,7 +63,8 @@ ip_addresses = "\n".join(ip_addresses)
 #Rewrite the file with the updated list
 with open(import_file, "w") as file:
     file.write(ip_addresses)
-✅ Summary
+    
+### ✅ Summary
 This project demonstrates how I:
 
 Opened and read from allow_list.txt
