@@ -1,6 +1,6 @@
 # Update a File Through a Python Algorithm
 
-## 📌 Project Description
+# 📌 Project Description
 
 At my organisation, access to restricted content is controlled via an **allow list** of IP addresses (`allow_list.txt`). A separate **remove list** identifies IP addresses that should no longer have access. I created a Python algorithm to **automate the process of updating the allow list** by removing the specified IPs in the remove list.
 
