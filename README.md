@@ -51,9 +51,10 @@ At my organisation, access to restricted content is controlled via an **allow li
     
     if element in ip_addresses:
     
-        # Use '.remove()' to remove the element
+    
+    # Use '.remove()' to remove the element
         
-        ip_addresses.remove(element)
+    ip_addresses.remove(element)
         
 ### 4. Update the File With the Revised List
 
@@ -63,6 +64,7 @@ At my organisation, access to restricted content is controlled via an **allow li
     #Convert 'ip_addresses' back to a string for writing
 
     ip_addresses = "\n".join(ip_addresses)
+    
 
     #Rewrite the file with the updated list
 
