@@ -6,7 +6,7 @@ At my organisation, access to restricted content is controlled via an **allow li
 
 ---
 
-## 📂 Step-by-Step Breakdown
+# 📂 Step-by-Step Breakdown
 
 ### 1. Open the File That Contains the Allow List
 
@@ -18,7 +18,7 @@ First, assign the file name to a variable:
 import_file = "allow_list.txt"
 
 
-# Use a with statement to open and read the file:
+### Use a with statement to open and read the file:
 
 #Build 'with' statement to read the initial contents of the file
 
