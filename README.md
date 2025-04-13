@@ -18,7 +18,7 @@ First, assign the file name to a variable:
 import_file = "allow_list.txt"
 
 
-Use a with statement to open and read the file:
+## Use a with statement to open and read the file:
 
 #Build 'with' statement to read the initial contents of the file
 
@@ -29,7 +29,7 @@ with open(import_file, "r") as file:
     
 ### 2. Convert the String to a List
 
-Split the string into a list of IP addresses:
+## Split the string into a list of IP addresses:
 
 
 #Use '.split()' to convert 'ip_addresses' from a string to a list
@@ -37,12 +37,12 @@ ip_addresses = ip_addresses.split()
 
 ### 3. Iterate Through the Remove List
 
-Use a for loop to iterate through each item in remove_list:
+## Use a for loop to iterate through each item in remove_list:
 
 
 #Loop through 'remove_list'
 
-for element in remove_list:
+## for element in remove_list:
 
     # Check if 'element' is in 'ip_addresses'
     
@@ -54,7 +54,7 @@ for element in remove_list:
         
 ### 4. Update the File With the Revised List
 
-Convert the list back into a newline-separated string and write it back to the file:
+## Convert the list back into a newline-separated string and write it back to the file:
 
 
 #Convert 'ip_addresses' back to a string for writing
@@ -77,7 +77,7 @@ Wrote the updated list back to the file in the correct format
 
 This script helps automate access control in environments using allow lists for restricted content access.
 
-🛠️ Technologies Used
+### 🛠️ Technologies Used
 
 Python 3
 
@@ -87,7 +87,7 @@ List methods (split, remove, join)
 
 Control flow (for, if)
 
-📁 Files Included
+## 📁 Files Included
 
 allow_list.txt – File containing allowed IP addresses
 
